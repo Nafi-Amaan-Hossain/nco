@@ -1,0 +1,96 @@
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>The Seven Continents</title>
+      <meta name="description" content="The Seven Continents.">
+      <link href="tailwind.css" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+   </head>
+   <body class="bg-gray-200 font-sans leading-normal tracking-normal">
+      <nav id="header" class="bg-gray-900 fixed w-full z-10 top-0">
+         <div class="w-full md:max-w-4xl mx-auto flex flex-wrap items-center justify-between mt-0 py-3">
+            <div class="pl-4">
+               <a class="text-white text-bold text-base no-underline hover:no-underline font-extrabold text-xl" href="/">
+               Continents
+               </a>
+            </div>
+            <div class="block lg:hidden pr-4">
+               <button id="nav-toggle" class="flex items-center px-3 py-2 border rounded text-white border-white hover:text-white hover:border-gray-500 appearance-none focus:outline-none">
+                  <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                     <title>Menu</title>
+                     <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"></path>
+                  </svg>
+               </button>
+            </div>
+            <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block mt-2 lg:mt-0 bg-gray-400 md:bg-transparent z-20 bg-gray-800" id="nav-content">
+               <ul class="list-reset lg:flex justify-end flex-1 items-center">
+                  <li class="mr-3">
+                     <a class="inline-block py-2 px-4 text-white no-underline hover:text-gray-500 hover:text-underline" href="/north-america">North America</a>
+                  </li>
+                  <li class="mr-3">
+                     <a class="inline-block py-2 px-4 text-white no-underline hover:text-gray-500 hover:text-underline py-2 px-4" href="/south-america">South America</a>
+                  </li>
+                  <li class="mr-3">
+                     <a class="inline-block py-2 px-4 text-white no-underline hover:text-gray-500 hover:text-underline py-2 px-4" href="/asia">Asia</a>
+                  </li>
+                  <li class="mr-3">
+                     <a class="inline-block py-2 px-4 text-white no-underline hover:text-gray-500 hover:text-underline py-2 px-4" href="/africa">Africa</a>
+                  </li>
+                  <li class="mr-3">
+                     <a class="inline-block py-2 px-4 text-white no-underline hover:text-gray-500 hover:text-underline py-2 px-4" href="/antarctica">Antarctica</a>
+                  </li>
+                  <li class="mr-3">
+                     <a class="inline-block py-2 px-4 text-white no-underline hover:text-gray-500 hover:text-underline py-2 px-4" href="/australia">Australia</a>
+                  </li>
+                  <li class="mr-3">
+                     <a class="inline-block py-2 px-4 text-white no-underline hover:text-gray-500 hover:text-underline py-2 px-4" href="/europe">Europe</a>
+                  </li>
+               </ul>
+            </div>
+         </div>
+      </nav>
+      <div id="app"></div>
+      <!--Footer starts-->
+      <footer class="bg-gray-600 inset-x-0 bottom-0 w-full border-t border-gray-400 shadow">
+         <div class="container max-w-4xl mx-auto flex py-8">
+            <div class="w-full mx-auto flex flex-wrap">
+               <div class="flex w-full md:w-1/2 ">
+                  <div class="px-8">
+                     <h3 class="font-bold text-purple-500">About</h3>
+                     <p class="py-4 text-gray-400 text-sm">
+                        This website tries to provide information about continents in an aesthetically pleasing, yet less-distractive and minimal interface. The information provided is kept in simple language for better readability. This site even resizes to fit in all screens for any reader. Practices such as proper contrast and alternate texts in images are maintained provide a better acessibility.
+                     </p>
+                  </div>
+               </div>
+               <div class="flex w-full md:w-1/2">
+                  <div class="px-8">
+                     <h3 class="font-bold text-purple-500">Social</h3>
+                     <ul class="list-reset items-center text-sm pt-3">
+                        <li>
+                           <a class="inline-block text-gray-400 no-underline hover:text-gray-500 hover:text-underline py-1" href="#">GitHub</a>
+                        </li>
+                        <li>
+                           <a class="inline-block text-gray-400 no-underline hover:text-gray-500 hover:text-underline py-1" href="#">Discord</a>
+                        </li>
+                        <li>
+                           <a class="inline-block text-gray-400 no-underline hover:text-gray-900 hover:text-underline py-1" href="#">Gmail</a>
+                        </li>
+                     </ul>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+      <!--Footer ends-->
+      <!--Scripts for interaction at last, good practice-->
+      <script lang="text/javascript">
+         // Javascript to toggle the menu
+         document.getElementById('nav-toggle').onclick = function() {
+            document.getElementById('nav-content').classList.toggle("hidden");
+         }
+      </script>
+   </body>
+</html>
